@@ -392,7 +392,7 @@ class Gate implements GateInterface
             return $user;
         };
 
-        return new static(
+        return new self(
             $this->container, $callback, $this->abilities,
             $this->policies, $this->beforeCallbacks, $this->afterCallbacks,
             $this->guessPolicyNamesUsingCallback

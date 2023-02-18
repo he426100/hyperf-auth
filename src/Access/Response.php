@@ -64,7 +64,7 @@ class Response implements Arrayable
      */
     public static function allow(?string $message = null, $code = null): Response
     {
-        return new static(true, $message, $code);
+        return new self(true, $message, $code);
     }
 
     /**
@@ -75,7 +75,7 @@ class Response implements Arrayable
      */
     public static function deny(?string $message = null, $code = null): Response
     {
-        return new static(false, $message, $code);
+        return new self(false, $message, $code);
     }
 
     /**

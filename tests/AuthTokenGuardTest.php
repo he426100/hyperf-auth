@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace HyperfTest;
 
 use Hyperf\HttpServer\Request;
-use Hyperf\Utils\Context;
+use Hyperf\Context\Context;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Contracts\UserProviderInterface;
 use HyperfExt\Auth\Guards\TokenGuard;

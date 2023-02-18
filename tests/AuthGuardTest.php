@@ -14,7 +14,7 @@ use Hyperf\Contract\SessionInterface;
 use Hyperf\HttpMessage\Cookie\Cookie;
 use Hyperf\HttpMessage\Uri\Uri;
 use Hyperf\HttpServer\Request;
-use Hyperf\Utils\Context;
+use Hyperf\Context\Context;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Contracts\UserProviderInterface;
 use HyperfExt\Auth\Events\Attempting;

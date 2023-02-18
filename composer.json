@@ -30,7 +30,9 @@
     },
     "require": {
         "php": ">=8.0",
+        "hyperf/macroable": "~3.0.0",
         "he426100/hyperf-hashing": "~3.0.0",
+        "he426100/hyperf-jwt": "^3.0",
         "hyperf/command": "~3.0.0",
         "hyperf/config": "~3.0.0",
         "hyperf/database": "~3.0.0",
@@ -41,13 +43,13 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
         "hyperf/testing": "~3.0.0",
+        "mockery/mockery": "^1.0",
         "phpstan/phpstan": "^1.9",
-        "swoole/ide-helper": "dev-master",
-        "mockery/mockery": "^1.0"
+        "swoole/ide-helper": "dev-master"
     },
     "suggest": {
         "hyperf/session": "Required to use session guard.",
-        "hyperf-ext/cookie": "Required to use session guard.",
+        "he426100/hyperf-cookie": "Required to use session guard.",
         "he426100/hyperf-jwt": "Required to use JWT guard."
     },
     "config": {
