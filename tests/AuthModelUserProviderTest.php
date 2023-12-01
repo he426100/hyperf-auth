@@ -155,7 +155,7 @@ class AuthModelUserProviderTest extends TestCase
         $hasher = m::mock(DriverInterface::class);
 
         return $this->getMockBuilder(ModelUserProvider::class)
-            ->setMethods(['createModel'])
+            ->onlyMethods(['createModel'])
             ->setConstructorArgs([
                 m::mock(HashInterface::class),
                 [

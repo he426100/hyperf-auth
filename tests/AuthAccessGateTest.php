@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use HyperfExt\Auth\Access\Gate;
 use HyperfExt\Auth\Access\HandlesAuthorization;
 use HyperfExt\Auth\Access\Response;
@@ -576,7 +576,7 @@ class AuthAccessGateTest extends TestCase
     /**
      * @return array
      */
-    public function notCallableDataProvider()
+    public static function notCallableDataProvider()
     {
         return [
             [1],
@@ -590,7 +590,7 @@ class AuthAccessGateTest extends TestCase
     {
         $this->expectException(AuthorizationException::class);
         $this->expectExceptionMessage('You are not an admin.');
-        $this->expectExceptionCode(null);
+        $this->expectExceptionCode(0);
 
         $gate = $this->getBasicGate();
 
@@ -774,7 +774,7 @@ class AuthAccessGateTest extends TestCase
         $this->assertEquals($expectedHasValue, $gate->has($abilitiesToCheck));
     }
 
-    public function hasAbilitiesTestDataProvider()
+    public static function hasAbilitiesTestDataProvider()
     {
         $abilities = ['foo' => 'foo', 'bar' => 'bar'];
         $noAbilities = [];
