@@ -18,6 +18,8 @@ use HyperfExt\Auth\Contracts\AuthManagerInterface;
 use HyperfExt\Auth\Events\GateManagerResolved;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
+use function Hyperf\Support\make;
+use function Hyperf\Support\call;
 
 /**
  * @method \HyperfExt\Auth\Contracts\Access\GateInterface define(string $ability, callable|string $callback)               Define a new ability.

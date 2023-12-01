@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExt\Auth\Access;
 
-use Hyperf\Utils\Contracts\Arrayable;
+use Hyperf\Contract\Arrayable;
 use HyperfExt\Auth\Exceptions\AuthorizationException;
 
 class Response implements Arrayable

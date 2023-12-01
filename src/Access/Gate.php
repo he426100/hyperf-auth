@@ -12,14 +12,16 @@ namespace HyperfExt\Auth\Access;
 
 use Exception;
 use Hyperf\Contract\ContainerInterface;
-use Hyperf\Utils\Arr;
-use Hyperf\Utils\Str;
+use Hyperf\Collection\Arr;
+use Hyperf\Stringable\Str;
 use HyperfExt\Auth\Contracts\Access\GateInterface;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Exceptions\AuthorizationException;
 use InvalidArgumentException;
 use ReflectionClass;
 use ReflectionFunction;
+use function Hyperf\Collection\collect;
+use function Hyperf\Support\class_basename;
 
 class Gate implements GateInterface
 {

@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace HyperfExt\Auth\Passwords;
 
 use Closure;
-use Hyperf\Utils\Arr;
+use Hyperf\Collection\Arr;
 use HyperfExt\Auth\Contracts\CanResetPasswordInterface;
 use HyperfExt\Auth\Contracts\PasswordBrokerInterface;
 use HyperfExt\Auth\Contracts\TokenRepositoryInterface;

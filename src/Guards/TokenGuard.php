@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExt\Auth\Guards;
 
-use Hyperf\Utils\Str;
+use Hyperf\Stringable\Str;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Contracts\GuardInterface;
 use HyperfExt\Auth\Contracts\UserProviderInterface;

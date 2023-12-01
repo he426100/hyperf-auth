@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
-use Hyperf\Utils\Arr;
+use Hyperf\Collection\Arr;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Contracts\CanResetPasswordInterface;
 use HyperfExt\Auth\Contracts\PasswordBrokerInterface;

@@ -30,7 +30,6 @@ class Auth extends AbstractAnnotation
 
     public function __construct($value = null)
     {
-        parent::__construct();
         if (isset($value['value'])) {
             $value['value'] = empty($value['value']) ? [] : (is_array($value['value']) ? array_unique($value['value']) : [$value['value']]);
             $this->guards = $value['value'];

@@ -10,8 +10,8 @@ declare(strict_types=1);
  */
 namespace HyperfExt\Auth\UserProviders;
 
-use Hyperf\Utils\Contracts\Arrayable;
-use Hyperf\Utils\Str;
+use Hyperf\Contract\Arrayable;
+use Hyperf\Stringable\Str;
 use HyperfExt\Auth\Contracts\AuthenticatableInterface;
 use HyperfExt\Auth\Contracts\UserProviderInterface;
 use HyperfExt\Hashing\Contract\DriverInterface as HasherInterface;

@@ -17,6 +17,7 @@ use HyperfExt\Auth\Contracts\PasswordBrokerManagerInterface;
 use HyperfExt\Auth\Contracts\TokenRepositoryInterface;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
+use function Hyperf\Support\make;
 
 /**
  * @mixin \HyperfExt\Auth\Contracts\PasswordBrokerInterface

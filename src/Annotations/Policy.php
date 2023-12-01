@@ -29,7 +29,6 @@ class Policy extends AbstractAnnotation
 
     public function __construct($value = null, $aa = null)
     {
-        parent::__construct($value);
         if (isset($value['value'])) {
             $value['value'] = empty($value['value']) ? [] : (is_array($value['value']) ? array_unique($value['value']) : [$value['value']]);
             if (empty($value['value'])) {
